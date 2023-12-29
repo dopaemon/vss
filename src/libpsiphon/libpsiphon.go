@@ -18,7 +18,7 @@ import (
 var (
 	Loop          = true
 	DefaultConfig = &Config{
-		CoreName: "psiphon-tunnel-core",
+		CoreName: "psiphon-tunnel-core.so",
 		Tunnel:   1,
 		Region:   "",
 		Protocols: []string{
