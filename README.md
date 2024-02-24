@@ -1,7 +1,15 @@
 # Brainfuck Tunnel - Psiphon Pro Go Version
 
-...
+## Install
+```bash
+termux-setup-storage && pkg install php && apt upgrade && pkg install git tmux -y && git clone https://github.com/dopaemon/vss.git && clear && cd vss && chmod a+x tun && chmod a+x psiphon-tunnel-core && echo 'PATH="$PATH:$HOME/vss"' >> $HOME/.bashrc && source $HOME/.bashrc && exit
+```
 
+* [**SocksDroid**](https://github.com/bndeff/socksdroid/releases/download/1.0.4/socksdroid-1.0.4.apk)
+
+* [**DNS**]() ```203.113.131.6```
+
+...
 
 Requirements
 ------------
