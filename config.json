@@ -7,8 +7,8 @@
 		"Type": 2,
 		"Port": "8989",
 		"Rules": {
-			"akamai.net:80": [
-				"125.235.36.177"
+			"akamai.net:443": [
+				"125.235.36.177:443"
 			]
 		},
 		"Payload": "",
@@ -20,13 +20,13 @@
 	"PsiphonCore": 20,
 	"Psiphon": {
 		"CoreName": "psiphon-tunnel-core",
-		"Tunnel": 10,
+		"Tunnel": 20,
 		"Region": "SG",
 		"Protocols": [
 			"FRONTED-MEEK-HTTP-OSSH",
 			"FRONTED-MEEK-OSSH"
 		],
-		"TunnelWorkers": 8,
+		"TunnelWorkers": 16,
 		"KuotaDataLimit": 1,
 		"Authorizations": []
 	}

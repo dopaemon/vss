@@ -17,12 +17,12 @@ import (
 )
 
 const (
-	appName        = "Brainfuck Tunnel"
+	appName        = "Psiphon Pro | Viettel akamai"
 	appVersionName = "Psiphon Pro Go"
-	appVersionCode = "1.3.210109"
+	appVersionCode = "0.0.1"
 
-	copyrightYear   = "2020"
-	copyrightAuthor = "Aztec Rabbit"
+	copyrightYear   = "2024"
+	copyrightAuthor = "Aztec Rabbit | dopaemon"
 )
 
 var (
@@ -51,6 +51,8 @@ func GetConfigPath(filename string) string {
 }
 
 func main() {
+	libpsiphon.RemoveData()
+
 	liblog.Header(
 		[]string{
 			fmt.Sprintf("%s [%s Version. %s]", appName, appVersionName, appVersionCode),
@@ -65,8 +67,8 @@ func main() {
 	defaultConfig.Inject = libinject.DefaultConfig
 	defaultConfig.Inject.Type = 2
 	defaultConfig.Inject.Rules = map[string][]string{
-		"akamai.net:80": []string{
-			"125.235.36.177",
+		"akamai.net:443": []string{
+			"125.235.36.177:443",
 		},
 	}
 	defaultConfig.Inject.Payload = ""
